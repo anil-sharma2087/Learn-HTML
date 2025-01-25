@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<body>
+    <form id="form1" method="post"  action="Test.html"  target="_blank">
+        Name: <input type="text" name="name" size="30" placeholder="Enter your Name....." required><br>
+        Password: <input type="password" name="password" form="form2"><br>
+        <input type="submit" value="Submit" formnovalidate><br>
+    </form>
+    <hr/>
+    <form id="form2" method="get" novalidate>
+        Name: <input type="text" name="name" dirname="name.dir" readonly><br>
+        User Name: <input type="text" pattern="^[a-z]+$" title="abcde">
+        Upload Image: <input type="file" name="file" accept="image/*" disabled><br>
+        <input type="submit" value="Admin Submit" formaction="Test2.html">
+    </form>
+    <form enctype="multipart/form-data" autocomplete="on" accept-charset="UTF-8">
+
+    </form>
+</body>
+</html>
